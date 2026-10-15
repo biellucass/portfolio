@@ -1,0 +1,10 @@
+:root {
+    --cor-primaria:#FFFCFC;
+    --cor-secundaria:#D7D2D2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
