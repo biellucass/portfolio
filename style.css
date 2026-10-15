@@ -1,10 +1,111 @@
+/* Definindo propriedades customizadas */
+
 :root {
-    --cor-primaria:#FFFCFC;
-    --cor-secundaria:#D7D2D2;
+    /* fontes */
+    --font-primaria: "Inter", sans-serif;
+
+    /* cores */
+    --bg-primaria:#F5F5F7;
+    --bg-secundaria:#FFFCFC;
+
+    --bg-button-primario: #0071E3;
+    --bg-button-secundario: transparent;
+
+    -bg-overlay: #00000087;
+
+    /* bordas */
+    --borda-button: 0.0625rem solid #0071E3;
+    
+    /* textos */
+    --cor-texto-button-primario: #ffffff;
+    --cor-texto-button-secundario:#0071e3;
+    
+    --cor-texto-paragrafo: #868686;
+    --cor-texto-titulo: #1c1c1c;
+
+    --cor-gradient: linear-gradient(135deg, cyan, violet);
 }
+
+/* Reset Global */
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+
     list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg-primaria);
+    font-family: var(--font-primaria);
+}
+
+header,header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background-color: var(--bg-secundaria);
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+}
+
+header h1 a{
+    color: var(--cor-texto-titulo);
+    font-size: 1.5rem;
+}
+
+header ul {
+    gap: 1rem;
+}
+
+header ul li a{
+    font-size: 1.125rem;
+    color: var(--cor-texto-paragrafo);
+    font-weight: 500;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    height: 90dvh;
+    padding: .5rem;
+}
+
+.hero-section h2 {
+    font-size: clamp(3rem, 5vw ,5rem);
+    /* clamp(valor-min, valor-preferido, valor-máximo) */
+    color: var(--cor-texto-titulo);
+    margin-bottom: 1rem;
+}
+ .hero-section h2 span {
+    background-image: var(--cor-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+ }
+
+ .hero-section p {
+    color: var(--cor-texto-paragrafo);
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    line-height: 1.5;
+ }
+
+
+/* provisório */
+img {
+    max-width: 100%;
 }
