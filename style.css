@@ -263,6 +263,11 @@ h2 span {
     background-color: var(--bg-secundaria);
 }
 
+.form-section div p {
+    max-width: 45ch;
+    margin: 1rem auto;
+}
+
 .form-section form {
     background-color: #EDEDED;
     border-radius: 20px;
@@ -274,6 +279,10 @@ h2 span {
     padding: .875rem 1rem;
     margin-top: 3rem;
 
+    width: 100%;
+    max-width: 30rem;
+    margin: auto;
+
 }
 
 form label {
@@ -283,7 +292,6 @@ form label {
 }
 
 form input, form textarea {
-    
 
     background-color: #D7D2D2;
 }
@@ -307,6 +315,10 @@ form textarea{
 form input, form button {
     height: 3rem;
     width:100%;
+}
+
+form button {
+    cursor: pointer;
 }
 
 footer{
@@ -356,12 +368,25 @@ footer a {
 
     .projects-section ul {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
+
+        margin-top: 2rem;
     }
 
 }
 
+@media screen and (min-width: 75rem) {
+    .projects-section ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+    .form-section {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 
-
+    .form-section div {
+        text-align: center;
+    }
+}
