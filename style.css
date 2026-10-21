@@ -73,6 +73,7 @@ header h1 a{
     font-size: 1.5rem;
 }
 
+
 header ul {
     gap: 1rem;
 }
@@ -410,13 +411,6 @@ footer a {
     .form-section div {
         text-align: center;
     }
-}
-
-a:hover {
-    background-color: var(--cor-texto-primario);
-    color: var(--cor-texto-button-primario);
-    border-radius: 20px;
-    padding: 0.25rem;
 }
 
 @keyframes gradiente-animacao {
