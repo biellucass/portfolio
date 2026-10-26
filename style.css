@@ -198,11 +198,11 @@ h2 span {
 .about-section img {
     height: 334px;
     width: 100%;
+    max-width: 350px;
     object-fit: cover;
 
     border-radius: 24px;
 
-    max-width: 100%;
     margin-top: 2rem;
 }
 
@@ -233,11 +233,11 @@ h2 span {
 }
 
 .projects-section li:nth-child(2){
-    background-image: url("/images/capa-criacao-animais.jpg");
+    background-image: url("/images/social-link.jpg");
 }
 
 .projects-section li:last-child{
-    background-image: url("/images/capa-zoo.jpg");
+    background-image: url("/images/projeto-acqua.png");
 }
 
 .projects-section article {
@@ -384,8 +384,17 @@ footer a {
 
     .about-section {
         display: flex;
-        gap: 2rem;
+        gap: 13rem;
         text-align: left;
+    }
+
+    .about-section img {
+        max-width: 340px;
+        max-height: 350px;
+    }
+
+    .about-section p {
+        max-width: 60ch;
     }
 
     .projects-section ul {
