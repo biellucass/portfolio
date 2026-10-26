@@ -66,13 +66,17 @@ header{
     padding: .5rem 1rem;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 header h1 a{
     color: var(--cor-texto-secundario);
     font-size: 1.5rem;
-}
 
+    display: inline-block;
+
+    transition: transform 0.2s ease, opacity 0.2s ease
+}
 
 header ul {
     gap: 1rem;
@@ -82,12 +86,20 @@ header ul li a{
     font-size: 1.125rem;
     color: var(--cor-texto-primario);
     font-weight: 500;
+
+    display: inline-block;
+
+    transition: transform 0.2s ease, opacity 0.2s ease
+}
+header ul li a:hover, header h1 a:hover {
+    transform: scale(1.10); 
+    opacity: 0.8;           
 }
 
-
-
-
-
+a:focus-visible{
+    outline: 3px solid #ff9900; 
+    outline-offset: 4px;       
+}
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -163,10 +175,28 @@ h2 span {
     background-color: var(--bg-button-primario);
     color: var(--cor-texto-button-primario);
  }
+
+ .hero-section ul li:first-child a:hover, 
+ form button:hover {
+    background-color: white;
+    border: solid 1px var(--bg-button-primario);
+    color: var(--bg-button-primario); 
+    
+    font-weight: 500;
+    transition: 95ms;
+}
+
  .hero-section ul li:last-child a{
     border: solid 1px var(--bg-button-primario);
     color: var(--bg-button-primario);
+    
     font-weight: 500;
+ }
+
+ .hero-section ul li:last-child a:hover{
+    background-color: var(--bg-button-primario);
+    color: var(--cor-texto-button-primario);
+    transition: 95ms;
  }
 
 
@@ -278,6 +308,12 @@ h2 span {
     border-radius: 1.5rem;
 }
 
+.projects-section a:hover{
+    background-color: #c8c4c4;
+    transform: translateY(-2px); /* Dá uma pequena levantada no botão */
+    transition: 1s;
+}
+
 
 
 
@@ -371,6 +407,12 @@ footer a {
 
     gap: .25rem;
     color: var(--cor-texto-primario);
+}
+
+footer a:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+    transition: 80ms;
 }
 
 @media screen and (min-width: 48rem){
