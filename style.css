@@ -259,15 +259,15 @@ h2 span {
 }
 
 .projects-section li:first-child{
-    background-image: url("/images/capa-criacao-iphone.jpg");
+    background-image: url("images/capa-criacao-iphone.jpg");
 }
 
 .projects-section li:nth-child(2){
-    background-image: url("/images/social-link.jpg");
+    background-image: url("images/social-link.jpg");
 }
 
 .projects-section li:last-child{
-    background-image: url("/images/projeto-acqua.png");
+    background-image: url("images/projeto-acqua.png");
 }
 
 .projects-section article {
